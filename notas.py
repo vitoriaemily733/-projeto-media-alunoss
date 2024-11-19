@@ -21,3 +21,27 @@ elif media >= 6.0:
     print("Aprovado")
 else:
     print("Reprovado")
+
+
+    # Exibir suas notas
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
+
+# Pesos das notas
+peso1 = 1
+peso2 = 1
+peso3 = 2
+
+# Calculando a média ponderada
+media = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3)
+
+# Exibindo o resultado e verificando status
+print(f"Sua média final é: {media:.2f}")
+
+if media >= 6.0:
+    print("Aprovado")
+elif media >= 5.0:
+    print("Recuperação")
+else:
+    print("Reprovado")
